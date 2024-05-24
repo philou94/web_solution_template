@@ -1,1 +1,1 @@
-# web_solution_template
+# An organized, enpty, CI ready visual studio solution repository template
