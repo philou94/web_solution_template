@@ -1,0 +1,10 @@
+<Project>
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <!--<SkipLocalsInit>true</SkipLocalsInit>-->
+    <EnablePackageValidation Condition="'$(EnablePackageValidation)' == ''">true</EnablePackageValidation>
+    <!--<NoWarn>$(NoWarn);CA1034;CA1040;MA0004;MA0048</NoWarn>-->
+  </PropertyGroup>
+</Project>

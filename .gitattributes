@@ -1,0 +1,22 @@
+# Disable automatic text normalization
+* -text
+
+# LF line endings for Unix-style files
+*.cs        text eol=lf
+*.css       text eol=lf
+*.cshtml    text eol=lf
+*.csproj    text eol=lf
+*.js        text eol=lf
+*.json      text eol=lf
+*.md        text eol=lf
+*.props     text eol=lf
+*.razor     text eol=lf
+*.targets   text eol=lf
+*.ts        text eol=lf
+*.txt       text eol=lf
+*.yml       text eol=lf
+*.xaml      text eol=lf
+
+# CRLF line endings for Windows-style files
+*.cmd       text eol=crlf
+*.sln       text eol=crlf
