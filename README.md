@@ -1,1 +1,1 @@
-# An organized, enpty, CI ready visual studio solution repository template
+# An organized, empty, CI ready visual studio solution repository template
