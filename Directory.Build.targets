@@ -7,7 +7,7 @@
   <!-- Ensure the latest framework is a target of the project -->
   <Target
      Name="CheckLatestFramework" BeforeTargets="Build"
-     Condition="$(MSBuildProjectFile) != 'build.proj'
+     Condition="$(MSBuildProjectFile) != 'build.proj' AND $(MSBuildProjectFile) != 'packages.proj'
        AND $(ValidateProjectTargets) == true
        AND $(TargetFrameworks.Contains('$(LatestTargetFramework)')) == false">
     
