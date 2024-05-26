@@ -7,13 +7,16 @@
   
   <PropertyGroup>
     <ArtifactsPath>$(MSBuildThisFileDirectory)artifacts</ArtifactsPath>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <ValidateProjectTargets Condition="$(ValidateProjectTargets) == ''">true</ValidateProjectTargets>
-    <ImplicitUsings>enable</ImplicitUsings>
+	<TreatWarningsAsErrors Condition="'$(Configuration)' != 'Debug'">true</TreatWarningsAsErrors>
+    <ValidateProjectTargets Condition="$(ValidateProjectTargets) == ''">true</ValidateProjectTargets>  
+	<ImplicitUsings>enable</ImplicitUsings>
+	  
     <IsPackable>False</IsPackable>
+    
     <DefineConstants Condition="$(InvariantGlobalization) == 'true'">$(DefineConstants);InvariantGlobalization</DefineConstants>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <NoWarn>$(NoWarn);CA1034;CS1591</NoWarn>
+    
+	<GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CA1034</NoWarn>
   </PropertyGroup>
   
   <PropertyGroup Condition="'$(TargetFramework)' != '$(LatestTargetFrameworkPreview)'">
@@ -30,7 +33,7 @@
       <_PackageThirdPartyNoticesPath Condition="Exists('$(MSBuildProjectDirectory)\THIRD-PARTY-NOTICES.TXT')">$(MSBuildProjectDirectory)\THIRD-PARTY-NOTICES.TXT</_PackageThirdPartyNoticesPath>
 
       <Authors>Virage Simulation Web Developers</Authors>
-      <Company>Virage Simulation Inc</Company>
+      <Company>Virage Simulation</Company>
       <PackageProjectUrl></PackageProjectUrl>
       <PackageIcon>icon.png</PackageIcon>
       <PackageReadmeFile Condition="$(_PackageReadmeFilePath) != ''">readme.md</PackageReadmeFile>

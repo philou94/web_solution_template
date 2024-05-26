@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{67B84808-4BF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6FF96723-54AD-458C-B9DC-528369DD3C2B}"
 	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
 		eng\build.proj = eng\build.proj
 		Directory.Build.props = Directory.Build.props
 		Directory.Build.targets = Directory.Build.targets
